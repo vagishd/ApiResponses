@@ -5,17 +5,26 @@ Step 1. Add the JitPack repository to your build file
 
 Add it in your root build.gradle at the end of repositories:
 
-allprojects {
-		repositories {
+allprojects 
+{
+
+		repositories
+		{
+			
 			...
 			maven { url 'https://jitpack.io' }
+			
+		
 		}
 	}
   
   Step 2. Add the dependency
   
-  dependencies {
+  dependencies
+  {
+  
 	        compile 'com.github.vagishd:ApiResponses:1.0'
+		
 	}
   
   
@@ -24,9 +33,13 @@ allprojects {
  Implement ResponseListner interface in acivity/fragment.
   
  ApiResponse apiResponse = ApiResponse.with(this, this);
+ 
  apiResponse.performJsonParsing(true/false) // perform json parsing or not.
+  
  apiResponse.setClassType(ClassName.class) // Response class
+ 
  apiResponse.METHOD'S
+ 
  
  public void getRequestParams(String TAG, String url, HashMap<String, String> params)
  
