@@ -52,7 +52,7 @@ public class ApiResponse {
     public static ApiResponse with(Context context, ResponseListener responseListener) {
         return new ApiResponse(context, responseListener);
     }
-    
+
 
     public void getRequestParams(String TAG, String url, HashMap<String, String> params) {
         final Get get = new Get(TAG, url, params);
